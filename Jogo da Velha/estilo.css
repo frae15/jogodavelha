@@ -1,0 +1,35 @@
+/*vai selecionar todos os elementos html da pagina*/
+* {
+    /*colocar o border box pro margin e padding não influenciar na largura dos elementos*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*colocando isso pro body ocupar 100% da altura e 100% da largura da tela*/
+    height: 100vh;
+    width: 100vw;
+    /*Cor de fundo da pagina html*/
+     background-color: blueviolet; 
+}
+
+
+.quadro {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.celulas {
+    width:100px;
+    height: 100px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
